@@ -1,0 +1,398 @@
+@import url(../fonts/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #EFF5F5;
+    font-family: 'Montserrat', sans-serif;
+    color: #626262;
+}
+
+.container {
+    max-width: 1344px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 15px 0 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #626262;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+    color: #323232;
+    transition: 300ms;
+}
+
+.nav__btn {
+    padding: 9px 40px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+/* =============main============ */
+
+.intro {
+    background: url(../img/intro.png) no-repeat center/cover;
+    height: 100vh;
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.intro__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    color: #323232;
+    max-width: 530px;
+}
+
+.apps {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 635px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #EAEAEA;
+    box-shadow: 0px 59px 30px -40px rgba(0, 133, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.course {
+    margin-bottom: 50px;
+}
+
+.course__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course__cards {
+    max-width: 642px;
+    width: 100%;
+}
+
+.course__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 32px;
+}
+
+.cards__inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 306px;
+    width: 100%;
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 30px -15px rgba(0, 133, 255, 0.1);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    position: relative;
+}
+
+.card__icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #323232;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #323232;
+}
+
+.card__span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 43px;
+    background: #626262;
+    left: 110px;
+    top: 32px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 43px;
+    background: #626262;
+    left: 110px;
+    bottom: 32px;
+}
+
+.hopcard {
+    margin-bottom: 50px;
+}
+
+.hopcard__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hopcard__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 12px;
+}
+
+.hopcard__text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.hopcard__text span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.hopcard__comission {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.comission__span {
+    margin-left: 30px;
+}
+
+.hopcard__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hopcard__btn {
+    padding: 9px 60px;
+}
+
+.hopcard__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #626262;
+}
+
+.offers {
+    margin: 50px 0;
+}
+
+.offers__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.offers__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.offers__card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 642px;
+    width: 100%;
+    background: #BDC4FF;
+    box-shadow: 0px 40px 30px -25px rgba(189, 196, 255, 0.5);
+    border-radius: 10px;
+}
+
+.offers__card-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card__desc-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card__desc-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #323232;
+}
+
+.card__desc-btn {
+    padding: 9px 57px;
+}
+
+.offers__card:last-child {
+    background: #FFD280;
+}
+
+.offers__hit {
+    position: absolute;
+    color: #000000;
+    top: 0;
+    left: 23px;
+    transform: translateY(-50%);
+    padding: 3px 17px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(215, 215, 215, 0.3);
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(7.5px);
+    border-radius: 4px;
+}
+
+.all {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.all_btn {
+    padding: 9px 82px;
+}
+
+.mapps {
+    margin-top: 50px;
+}
+
+.mapps__title {
+    text-align: center;
+}
+
+.mapps__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+.mapps__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 116px 0;
+    background: #97EAB9;
+    box-shadow: 0px 40px 30px -25px rgba(151, 234, 185, 0.4);
+    border-radius: 10px;
+    gap: 25px;
+}
+
+.mapps__card1 {
+    background: #FFC1BD;
+    box-shadow: 0px 25px 30px -20px rgba(255, 193, 189, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 49px;
+    gap: 36px;
+    height: 50%;
+}
+
+.mapps__card2 {
+    padding: 37px 64px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #C1B7FF;
+    box-shadow: 0px 25px 30px -25px rgba(193, 183, 255, 0.4);
+    border-radius: 10px;
+    gap: 65px;
+    height: 50%;
+}
